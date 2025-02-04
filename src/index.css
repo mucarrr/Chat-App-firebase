@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --font-display: 'Poppins', sans-serif;
+    --color-custom: #665CAC;
+    --color-greenn: #58A11A;
+}
+
+@layer base {
+    body {
+        @apply bg-custom text-white min-h-screen font-display;
+    }
+}
+
+@layer components {
+    .wrapper {
+        @apply h-screen grid place-items-center w-full;
+    }
+    .containerr{
+        @apply bg-white text-custom p-[50px_60px] rounded-[10px] flex flex-col justify-center items-center gap-10 text-center max-w-[400px]
+    }
+    .text{
+        @apply text-custom font-semibold
+    }
+    .message{
+        @apply break-words break-normal whitespace-normal;
+    }
+}
